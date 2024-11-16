@@ -65,10 +65,28 @@ directly from anywhere.
 See [phpctags on packagist](http://packagist.org/packages/techlivezheng/phpctags)
 for more details.
 
+Fixed build not exist
+
+```
+mkdir build
+```
+
+Found ini file
+
+```
+php --ini
+```
+
+Disabled by the php.ini setting phar.readonly
+
+```
+phar.readonly = Off
+```
+
 Requirements
 ------------
 
-* PHP CLI 7.0+
+* PHP CLI 8.1+
 * [PHP-Parser](https://github.com/nikic/PHP-Parser)
 
 Acknowledgements
