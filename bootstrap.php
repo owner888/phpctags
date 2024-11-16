@@ -277,7 +277,7 @@ $tagline = <<<EOF
 !_TAG_PROGRAM_AUTHOR\ttechlivezheng\t/techlivezheng@gmail.com/
 !_TAG_PROGRAM_NAME\tphpctags\t//
 !_TAG_PROGRAM_URL\thttps://github.com/techlivezheng/phpctags\t/official site/
-!_TAG_PROGRAM_VERSION\t${version}\t//\n
+!_TAG_PROGRAM_VERSION\t{$version}\t//\n
 EOF;
 }
 

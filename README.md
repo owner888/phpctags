@@ -17,7 +17,7 @@ Enjoy!
 ## Download and installation
 
 ```
-curl -Ss https://raw.githubusercontent.com/vim-php/phpctags/gh-pages/install/phpctags.phar > phpctags
+curl -Ss https://raw.githubusercontent.com/owner888/phpctags/build/phpctags.phar > phpctags
 chmod +x phpctags
 ```
 
@@ -81,6 +81,19 @@ Disabled by the php.ini setting phar.readonly
 
 ```
 phar.readonly = Off
+```
+
+Build phpctags.phar
+
+```
+php buildPHAR.php
+```
+
+Test phpctags.phar
+
+```
+chmod +x build/phpctags.phar
+build/phpctags.phar
 ```
 
 Requirements
