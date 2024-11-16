@@ -17,7 +17,7 @@ Enjoy!
 ## Download and installation
 
 ```
-curl -Ss https://raw.githubusercontent.com/owner888/phpctags/build/phpctags.phar > phpctags
+curl -Ss https://raw.githubusercontent.com/owner888/phpctags/refs/heads/master/build/phpctags.phar > phpctags
 chmod +x phpctags
 ```
 
