@@ -534,8 +534,8 @@ class PHPCtagsException extends Exception {
     }
 }
 
-class ReadableRecursiveDirectoryIterator extends RecursiveDirectoryIterator {
-    function getChildren() {
+class ReadableRecursiveDirectoryIterator extends SplFileInfo {
+    public function getChildren() {
         try {
           return new ReadableRecursiveDirectoryIterator(
             $this->getPathname(),
