@@ -449,7 +449,7 @@ class PHPCtags
         }
 
         if (is_dir($file) && isset($this->mOptions['R'])) {
-            $iterator = new FilesystemIterator(
+            $iterator = new RecursiveIteratorIterator(
                 new ReadableRecursiveDirectoryIterator(
                     $file,
                     FilesystemIterator::SKIP_DOTS |
@@ -534,8 +534,8 @@ class PHPCtagsException extends Exception {
     }
 }
 
-class ReadableRecursiveDirectoryIterator extends FilesystemIterator {
-    public function getChildren() {
+class ReadableRecursiveDirectoryIterator extends RecursiveDirectoryIterator {
+    public function getChildren(): ReadableRecursiveDirectoryIterator {
         try {
           return new ReadableRecursiveDirectoryIterator(
             $this->getPathname(),
